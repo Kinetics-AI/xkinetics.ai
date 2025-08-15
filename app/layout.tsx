@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     },
     description: "xxx",
     keywords: ["Oxxx"],
+    icons: {
+        icon: [
+            {
+                url: "/favicon.png",
+                href: "/favicon.png",
+            },
+        ],
+    },
 };
 
 
