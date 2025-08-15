@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+
+
 const nextConfig: NextConfig = {
     /* config options here */
     images: {
@@ -20,8 +22,19 @@ const nextConfig: NextConfig = {
                 pathname: '/opendrivelab/**',
             },
         ],
-        dangerouslyAllowSVG: true,
     },
 };
+
+
+
+module.exports = {
+    async redirects() {
+        return [
+            { source: '/:slug', destination: '/', permanent: true },
+        ];
+    }
+}
+
+
 
 export default nextConfig;
