@@ -27,28 +27,12 @@ import {
 } from "@/components/ui/sidebar"
 import { useSidebar } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
-import {
-    Drawer,
-    DrawerClose,
-    DrawerContent,
-    DrawerDescription,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerTitle,
-    DrawerTrigger,
-} from "@/components/ui/drawer"
+
 
 
 
 import { FadeIn } from "@/components/animation/fade-in"
 
-
-
-import { Embodied, E2EAD } from "@/components/app-drawer"
-
-
-
-import { events } from "@/data/events"
 
 
 
@@ -145,85 +129,16 @@ export function AppSidebar() {
 
 
 
-                                <Collapsible className="group/collapsible flex flex-col gap-6">
-                                    <SidebarMenuItem>
-                                        <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                            Research
-                                            <ChevronDown className="size-4 transition-transform group-data-[state=closed]/collapsible:rotate-270 group-data-[state=open]/collapsible:rotate-0" />
-                                        </CollapsibleTrigger>
-                                        <CollapsibleContent>
-                                            <SidebarMenuSub>
-                                                <Drawer direction="top">
-                                                    <DrawerTrigger asChild>
-                                                        <div className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                            Embodied AI
-                                                        </div>
-                                                    </DrawerTrigger>
-                                                    <Embodied/>
-                                                </Drawer>
-                                                <Drawer direction="top">
-                                                    <DrawerTrigger asChild>
-                                                        <div className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                            End-to-End AD
-                                                        </div>
-                                                    </DrawerTrigger>
-                                                    <E2EAD/>
-                                                </Drawer>
-                                            </SidebarMenuSub>
-                                        </CollapsibleContent>
-                                    </SidebarMenuItem>
-                                </Collapsible>
-
-
 
                                 <Link href="/publications" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                     Publication
                                 </Link>
-                                {/* <Collapsible className="group/collapsible flex flex-col gap-6">
-                                    <SidebarMenuItem>
-                                        <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                            Publication
-                                            <ChevronDown className="size-4 transition-transform group-data-[state=closed]/collapsible:rotate-270 group-data-[state=open]/collapsible:rotate-0" />
-                                        </CollapsibleTrigger>
-                                        <CollapsibleContent>
-                                            <SidebarMenuSub>
-                                                <Link href="https://github.com/OpenDriveLab/UniVLA" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                    UniVLA
-                                                </Link>
-                                                <Link href="https://github.com/OpenDriveLab/UniAD" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                    UniAD
-                                                </Link>
-                                                <Link href="/publications"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                    more
-                                                </Link>
-                                            </SidebarMenuSub>
-                                        </CollapsibleContent>
-                                    </SidebarMenuItem>
-                                </Collapsible> */}
 
 
 
                                 <Link href="/datasets" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                     Dataset
                                 </Link>
-                                {/* <Collapsible className="group/collapsible flex flex-col gap-6">
-                                    <SidebarMenuItem>
-                                        <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                            Project
-                                            <ChevronDown className="size-4 transition-transform group-data-[state=closed]/collapsible:rotate-270 group-data-[state=open]/collapsible:rotate-0" />
-                                        </CollapsibleTrigger>
-                                        <CollapsibleContent>
-                                            <SidebarMenuSub>
-                                                <Link href="/AgiBot-World" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                    AgiBot World
-                                                </Link>
-                                                <Link href="/datasets"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
-                                                    more
-                                                </Link>
-                                            </SidebarMenuSub>
-                                        </CollapsibleContent>
-                                    </SidebarMenuItem>
-                                </Collapsible> */}
 
 
 
@@ -235,11 +150,6 @@ export function AppSidebar() {
                                         </CollapsibleTrigger>
                                         <CollapsibleContent>
                                             <SidebarMenuSub>
-                                                {[...events.values()].filter(event => event.keys.includes('editor_pick')).map((event) => (
-                                                    <Link href={event.url} target={event.url.startsWith('http') ? '_blank' : '_self'} className="p-2 rounded-sm hover:bg-o-blue/3 select-none" key={event.title}>
-                                                        {event.title}
-                                                    </Link>
-                                                ))}   
                                                 <Link href="/events"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                                     more
                                                 </Link>

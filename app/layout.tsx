@@ -15,20 +15,6 @@ import "./globals.css";
 
 
 
-// icon
-export const metadata: Metadata = {
-    icons: {
-        icon: [
-            {
-                url: "/resources/logo/OpenDriveLab/D.png",
-                href: "/resources/logo/OpenDriveLab/D.png",
-            },
-        ],
-    },
-};
-
-
-
 // font
 import { Inter } from "next/font/google";
 const inter = Inter({
@@ -71,7 +57,7 @@ export default function RootLayout({
 
 
 
-            <GoogleAnalytics gaId="G-L7VEDHS6G8" />
+            <GoogleAnalytics gaId="xx" />
 
 
 
