@@ -1,8 +1,21 @@
 import * as React from "react"
+import type { Metadata } from "next";
 
 
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { Header } from "@/components/header"
+
+
+export const metadata: Metadata = {
+    icons: {
+        icon: [
+            {
+                url: "/favicon.ico",
+                href: "/favicon.ico",
+            },
+        ],
+    },
+};
 
 
 import "./globals.css";
