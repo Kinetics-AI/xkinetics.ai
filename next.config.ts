@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
 module.exports = {
     async redirects() {
         return [
-            { source: '/:slug', destination: '/', permanent: true },
+            { source: '/dwug', destination: '/', permanent: true },
         ];
     }
 }
