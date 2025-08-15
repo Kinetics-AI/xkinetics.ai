@@ -7,6 +7,12 @@ import { Header } from "@/components/header"
 
 
 export const metadata: Metadata = {
+    title: {
+        default: "Kinetics.ai",
+        template: "%s | kinetics.ai"
+    },
+    description: "xxx",
+    keywords: ["Oxxx"],
     icons: {
         icon: [
             {
