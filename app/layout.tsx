@@ -2,8 +2,7 @@ import * as React from "react"
 import type { Metadata } from "next";
 
 
-import { SidebarProvider } from "@/components/ui/sidebar"
-import { Header } from "@/components/header"
+// import { Header } from "@/components/header"
 
 
 export const metadata: Metadata = {
@@ -53,11 +52,10 @@ export default function RootLayout({
 
 
             <body id="#">       
-                <SidebarProvider>
 
 
 
-                    <Header/>
+                    {/* <Header/> */}
 
 
 
@@ -65,7 +63,6 @@ export default function RootLayout({
 
 
 
-                </SidebarProvider>
             </body>
 
 
