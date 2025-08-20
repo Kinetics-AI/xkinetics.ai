@@ -2,7 +2,8 @@ import * as React from "react"
 import type { Metadata } from "next";
 
 
-// import { Header } from "@/components/header"
+import { Header } from "@/components/layout/header"
+import { Footer } from "@/components/layout/footer"
 
 
 export const metadata: Metadata = {
@@ -41,6 +42,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 
+
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -55,11 +58,19 @@ export default function RootLayout({
 
 
 
-                    {/* <Header/> */}
+                    <Header/>
 
 
 
-                    {children}
+                    <main className='w-full overflow-hidden'>
+
+                        {children}
+
+                    </main>
+
+
+
+                    <Footer/>
 
 
 
