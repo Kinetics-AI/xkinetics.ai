@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 
+import { HeroUIProvider } from '@heroui/react'
+
 
 export const metadata: Metadata = {
     title: {
@@ -55,6 +57,7 @@ export default function RootLayout({
 
 
             <body id="#">       
+                <HeroUIProvider>
 
 
 
@@ -73,7 +76,7 @@ export default function RootLayout({
                     <Footer/>
 
 
-
+                </HeroUIProvider>
             </body>
 
 
