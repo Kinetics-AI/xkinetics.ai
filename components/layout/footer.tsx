@@ -63,6 +63,20 @@ export function Footer() {
     return (
         <footer className="w-full px-6 my-24 gap-6 flex flex-col items-center select-none">
 
+
+            <div className="fixed right-0 bottom-0 m-6 z-20">
+                <Link href="#" className="bg-background text-foreground hover:bg-o-blue hover:text-background rounded-full flex justify-center items-center p-2 select-none">
+                    <span>
+                        <svg fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                        </svg>
+                    </span>
+                </Link>
+            </div>
+
+            
+
             <div className="w-full max-w-7xl flex gap-6 flex-wrap">
                 {links.map((link) => (
                     <Link href={link.url} target="_blank" key={link.icon} className="size-4 md:size-5 group">
