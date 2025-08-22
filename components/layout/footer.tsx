@@ -64,7 +64,7 @@ export function Footer() {
         <footer className="w-full px-6 my-24 gap-6 flex flex-col items-center select-none">
 
 
-            <div className="fixed right-0 bottom-0 m-6 z-20">
+            {/* <div className="fixed right-0 bottom-0 m-6 z-20">
                 <Link href="#" className="bg-background text-foreground hover:bg-o-blue hover:text-background rounded-full flex justify-center items-center p-2 select-none">
                     <span>
                         <svg fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
@@ -73,7 +73,7 @@ export function Footer() {
                         </svg>
                     </span>
                 </Link>
-            </div>
+            </div> */}
 
             
 

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import { BackToTop } from "@/components/layout/top"
 
 import { HeroUIProvider } from '@heroui/react'
 
@@ -53,17 +54,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={inter.className}>
-
-
-
-            <body id="#">       
+            <body>       
                 <HeroUIProvider>
 
-
-
                     <Header/>
-
-
 
                     <main className='w-full overflow-hidden'>
 
@@ -71,20 +65,13 @@ export default function RootLayout({
 
                     </main>
 
-
-
                     <Footer/>
 
+                    <BackToTop/>
 
                 </HeroUIProvider>
             </body>
-
-
-
             <GoogleAnalytics gaId="xx" />
-
-
-
         </html>
     );
 }

@@ -33,6 +33,111 @@ export default function Home() {
             </div>
 
 
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div className="w-full px-6 flex justify-center mt-36">
+                <div className="w-full max-w-7xl flex">
+                    <div className="w-full flex justify-between items-center">
+                        <h2 className="text-t1"> 
+                            <HeroLink href="#recruit">
+                                Recruit
+                            </HeroLink>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+
+
 
 
         </div>
