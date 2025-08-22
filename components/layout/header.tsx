@@ -20,11 +20,11 @@ import {
 export function Header() {
 
     return (
-        <header className="fixed">
+        <header className="fixed flex justify-between w-svw bg-amber-700 pr-2">
 
 
             {/* LOGO */}
-            <HeroButton className="fixed bg-background text-foreground hover:bg-white group">
+            <HeroButton className="bg-background text-foreground hover:bg-white group">
                 <Link href="/" className="select-none">
                     <Image
                         src="/resources/logo/OpenDriveLab/D.png"
@@ -39,7 +39,7 @@ export function Header() {
 
 
 
-            <div className="fixed right-0 mr-6 mt-6 flex gap-6">
+            <div className="flex mr-6 gap-6">
 
 
 
