@@ -50,7 +50,7 @@ export function Header() {
                         <HeroButton>Language</HeroButton>
                     </DrawerTrigger>
 
-                    <Menu/>
+                    <Language/>
                 
                 </Drawer>
 
