@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { HeroButton } from "@/components/custom-heroui/button"
+import { Button } from "@/components/ui/button"
 import { ChevronUp } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -35,9 +35,9 @@ export function BackToTop() {
           transition={{ duration: 0.3 }}
           className="fixed bottom-6 right-6 z-50"
         >
-          <HeroButton onClick={scrollToTop}>
+          <Button onClick={scrollToTop}>
             <ChevronUp className="h-5 w-5" />
-          </HeroButton>
+          </Button>
         </motion.div>
       )}
     </AnimatePresence>

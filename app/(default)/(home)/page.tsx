@@ -8,8 +8,9 @@ export const metadata: Metadata = {
 
 
 import Image from 'next/image'
+import Link from "next/link"
+
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { HeroLink } from "@/components/custom-heroui/link";
 
 
 export default function Home() {
@@ -24,118 +25,15 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex">
                     <div className="w-full flex justify-between items-center">
                         <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
+                        <Link href="#news" className="scroll-mt-32 group flex items-center" id="news">
+                            News
+
+                        </Link>
                         </h2>
                     </div>
                 </div>
             </div>
 
-
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-                        <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <HeroLink href="#recruit">
-                                Recruit
-                            </HeroLink>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            
 
 
 

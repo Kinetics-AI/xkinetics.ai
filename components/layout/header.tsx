@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 
 
-import { HeroButton } from "@/components/custom-heroui/button";
+import { Button } from "@/components/ui/button";
 
 import { Menu } from "./menu";
 import { Language } from "./international"
@@ -24,7 +24,7 @@ export function Header() {
 
 
             {/* LOGO */}
-            <HeroButton className="bg-background text-foreground hover:bg-white group">
+            <Button className="bg-background text-foreground hover:bg-white group">
                 <Link href="/" className="select-none">
                     <Image
                         src="/resources/logo/OpenDriveLab/D.png"
@@ -34,7 +34,7 @@ export function Header() {
                         className="group-hover:scale-125 transition delay-100 duration-200"
                     />
                 </Link>
-            </HeroButton>
+            </Button>
 
 
 
@@ -47,7 +47,7 @@ export function Header() {
                 <Drawer direction="right">
                     
                     <DrawerTrigger asChild>
-                        <HeroButton>Language</HeroButton>
+                        <Button>Language</Button>
                     </DrawerTrigger>
 
                     <Language/>
@@ -60,7 +60,7 @@ export function Header() {
                 <Drawer direction="right">
 
                     <DrawerTrigger asChild>
-                        <HeroButton>Menu</HeroButton>
+                        <Button>Menu</Button>
                     </DrawerTrigger>
 
                     <Menu/>

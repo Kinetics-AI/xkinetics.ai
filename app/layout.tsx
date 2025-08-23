@@ -6,7 +6,6 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { BackToTop } from "@/components/layout/top"
 
-import { HeroUIProvider } from '@heroui/react'
 
 
 export const metadata: Metadata = {
@@ -55,7 +54,6 @@ export default function RootLayout({
     return (
         <html lang="en" className={inter.className}>
             <body>       
-                <HeroUIProvider>
 
                     <Header/>
 
@@ -69,7 +67,6 @@ export default function RootLayout({
 
                     <BackToTop/>
 
-                </HeroUIProvider>
             </body>
             <GoogleAnalytics gaId="xx" />
         </html>
