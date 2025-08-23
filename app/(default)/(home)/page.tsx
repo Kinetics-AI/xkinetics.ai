@@ -25,10 +25,10 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex">
                     <div className="w-full flex justify-between items-center">
                         <h2 className="text-t1"> 
-                        <Link href="#news" className="scroll-mt-32 group flex items-center" id="news">
-                            News
+                            <Link href="#news" className="text-t1" id="news">
+                                News
 
-                        </Link>
+                            </Link>
                         </h2>
                     </div>
                 </div>
