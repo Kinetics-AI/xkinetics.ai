@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="w-full max-w-7xl flex">
                     <div className="w-full flex justify-between items-center">
                         <h2 className="text-t1"> 
-                            <Link href="#news" className="text-t1" id="news">
+                            <Link href="#news" className="text-t1 link link-animated" id="news">
                                 News
 
                             </Link>

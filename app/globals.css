@@ -122,6 +122,11 @@
 }
 
 
+
+@plugin "flyonui";
+
+
+
 @theme {
     --breakpoint-3xl: 112rem;
 }
