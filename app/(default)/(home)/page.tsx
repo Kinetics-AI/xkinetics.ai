@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 
 import Image from 'next/image'
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
@@ -29,7 +30,10 @@ export default function Home() {
                                 News
 
                             </Link>
+
                         </h2>
+
+
                     </div>
                 </div>
             </div>

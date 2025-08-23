@@ -123,8 +123,9 @@
 
 
 
-@plugin "flyonui";
-
+@plugin "flyonui" {
+  themes: false;
+}
 
 
 @theme {
