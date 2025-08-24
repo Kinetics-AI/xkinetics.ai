@@ -4,7 +4,6 @@ export const metadata: Metadata = {
     description: "OpenDriveLab is committed to exploring cutting-edge embodied AI technology, launching a series of benchmarking work, open source to serve the community, and promote the common development of the industry. Friends who are committed to making influential research are welcome to join!",
     keywords: ["OpenDriveLab", "Robotics", "Embodied AI", "Autonomous Driving", "HKU", "SII"],
 };
-import {use} from 'react';
 import {setRequestLocale} from 'next-intl/server';
 import {useTranslations} from 'next-intl';
 
@@ -15,9 +14,13 @@ import { Button } from "@/components/ui/button"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
-export default function Home({params}) {
+type PageProps = {
+  params: { locale: string };
+};
 
-    const {locale} = use(params);
+export default function Home({ params }: PageProps) {
+
+    const { locale } = params;
     
     // Enable static rendering
     setRequestLocale(locale);
