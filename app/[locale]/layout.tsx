@@ -60,7 +60,7 @@ export default async function LocaleLayout({
     children,
     params
 }: LayoutProps<'/[locale]'>) {
-    const {locale} = await params;
+    const {locale} = params;
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
