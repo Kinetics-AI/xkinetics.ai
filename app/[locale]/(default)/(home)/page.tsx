@@ -14,10 +14,12 @@ import { Button } from "@/components/ui/button"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
+type Props = {
+  params: { locale: string };
+};
 
-export default function Home({params}: PageProps<'/[locale]'>) {
+export default function Home({ params }: Props) {
 
-    const {locale} = use(params);
     const t = useTranslations('HomePage');
 
 
