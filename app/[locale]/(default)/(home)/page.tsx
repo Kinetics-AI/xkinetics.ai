@@ -14,11 +14,7 @@ import { Button } from "@/components/ui/button"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
-type PageProps = {
-  params: { locale: string };
-};
-
-export default function Home({ params }: PageProps) {
+export default function Home({ params }: { params: { locale: string } }) {
 
     const { locale } = params;
     
