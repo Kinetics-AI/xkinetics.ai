@@ -53,7 +53,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+    return routing.locales.map((locale) => ({locale}));
 }
 
 export default async function LocaleLayout({
@@ -63,12 +63,11 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: { locale: string };
 }) {
-    // Ensure that the incoming `locale` is valid
-    const {locale} = params;
+    const {locale} = await params;
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
-
+    
     // Enable static rendering
     setRequestLocale(locale);
 

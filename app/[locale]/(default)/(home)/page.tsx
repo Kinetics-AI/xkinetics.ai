@@ -5,8 +5,8 @@ export const metadata: Metadata = {
     keywords: ["OpenDriveLab", "Robotics", "Embodied AI", "Autonomous Driving", "HKU", "SII"],
 };
 import {use} from 'react';
+import {setRequestLocale} from 'next-intl/server';
 import {useTranslations} from 'next-intl';
- 
 
 import Image from 'next/image'
 import Link from "next/link"
@@ -14,13 +14,17 @@ import { Button } from "@/components/ui/button"
 
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
-type Props = {
-  params: { locale: string };
-};
 
-export default function Home({ params }: Props) {
+export default function Home({params}) {
 
-    const t = useTranslations('HomePage');
+    const {locale} = use(params);
+    
+    // Enable static rendering
+    setRequestLocale(locale);
+    
+    // Once the request locale is set, you
+    // can call hooks from `next-intl`
+    const t = useTranslations('Home');
 
 
     return (
