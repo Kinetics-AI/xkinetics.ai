@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
-export default function Home({ params }: { params: Promise<{ cat: string }> }) {
+export default function Home({ params }: { params: { locale: string } }) {
 
     const { locale } = params;
     
