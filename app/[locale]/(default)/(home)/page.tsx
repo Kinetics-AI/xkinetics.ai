@@ -10,13 +10,13 @@ import {useTranslations} from 'next-intl';
 import Image from 'next/image'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
+import {use} from 'react';
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
+type Params = Promise<{ locale: string }>
+export default function Home({ params }: { params: Params }) {
 
-export default function Home({ params }: { params: { locale: string } }) {
-
-    const { locale } = params;
+    const {locale} = use(params);
     
     // Enable static rendering
     setRequestLocale(locale);
