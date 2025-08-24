@@ -1,10 +1,19 @@
 import * as React from "react"
 import type { Metadata } from "next";
 
+import "../globals.css";
 
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { BackToTop } from "@/components/layout/top"
+
+import {notFound} from 'next/navigation';
+import {Locale, hasLocale, NextIntlClientProvider} from 'next-intl';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
+import {clsx} from 'clsx';
+import {routing} from '@/i18n/routing';
+
+
 
 
 
@@ -26,7 +35,6 @@ export const metadata: Metadata = {
 };
 
 
-import "./globals.css";
 
 
 
@@ -44,16 +52,28 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
 
-
-export default function RootLayout({
+export default async function LocaleLayout({
     children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+    params
+}: LayoutProps<'/[locale]'>) {
+    // Ensure that the incoming `locale` is valid
+    const {locale} = params;
+    if (!hasLocale(routing.locales, locale)) {
+        notFound();
+    }
+
+    // Enable static rendering
+    setRequestLocale(locale);
+
+
     return (
-        <html lang="en" className={inter.className}>
+        <html lang={locale} className={inter.className}>
             <body>       
+                <NextIntlClientProvider>
 
                     <Header/>
 
@@ -66,7 +86,8 @@ export default function RootLayout({
                     <Footer/>
 
                     <BackToTop/>
-
+                    
+                </NextIntlClientProvider>
             </body>
             <GoogleAnalytics gaId="xx" />
         </html>
