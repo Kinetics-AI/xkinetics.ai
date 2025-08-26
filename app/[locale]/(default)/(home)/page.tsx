@@ -1,20 +1,16 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-    title: "p",
-    description: "OpenDriveLab is committed to exploring cutting-edge embodied AI technology, launching a series of benchmarking work, open source to serve the community, and promote the common development of the industry. Friends who are committed to making influential research are welcome to join!",
-    keywords: ["OpenDriveLab", "Robotics", "Embodied AI", "Autonomous Driving", "HKU", "SII"],
-};
 import {use} from 'react';
 import {setRequestLocale} from 'next-intl/server';
 import {useTranslations} from 'next-intl';
+import { FadeIn } from "@/components/animation/fade-in"
 
 import Image from 'next/image'
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
 
-type Params = Promise<{ locale: string }>
-export default function Home({ params }: { params: Params }) {
+
+export default function Page({
+    params,
+}: {
+    params: Promise<{ locale: string }>
+}) {
 
     const {locale} = use(params);
     
@@ -27,31 +23,29 @@ export default function Home({ params }: { params: Params }) {
 
 
     return (
-        <div className="w-full">
+        <>
 
 
-
-
-            <div className="w-full px-6 flex justify-center mt-36">
-                <div className="w-full max-w-7xl flex">
-                    <div className="w-full flex justify-between items-center">
-                        <h2 className="text-t1"> 
-                            <Link href="#news" className="text-t1 link link-animated" id="news">
-                                {t('title')}
-
-                            </Link>
-
-                        </h2>
-
-
-                    </div>
+            {/* Landing */}
+            <div className="w-full   h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+                <div>
+                    <Image
+                        src="https://assets.ascendai.com/rMmibFe4czY.jpg"
+                        alt="landing"
+                        fill
+                        className="object-cover object-center bg-gradient-loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                    />
+                </div>
+                <div className="w-full px-6 xl:px-0 max-w-7xl flex absolute flex-col gap-6 items-start">
+                    <h1 className="font-bold text-t0 text-white">
+                        <FadeIn>Ascend AI</FadeIn>
+                        <br></br>
+                        {t('title')}
+                    </h1>
                 </div>
             </div>
 
 
-
-
-
-        </div>
+        </>
     )
 }

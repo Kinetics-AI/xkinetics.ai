@@ -12,18 +12,13 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'opendrivelab.github.io',
+                hostname: 'assets.ascendai.com',
                 pathname: '/**',
             },
             {
                 protocol: 'https',
                 hostname: 'img.shields.io',
                 pathname: '/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'ik.imagekit.io',
-                pathname: '/opendrivelab/**',
             },
         ],
         dangerouslyAllowSVG: true,

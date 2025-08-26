@@ -20,7 +20,7 @@ import {
 export function Header() {
 
     return (
-        <header className="fixed flex justify-between w-svw bg-amber-700 pr-2">
+        <header className="fixed flex justify-between w-svw bg-amber-700 pr-2 z-60">
 
 
             {/* LOGO */}

@@ -15,29 +15,6 @@ import {routing} from '@/i18n/routing';
 
 
 
-
-
-export const metadata: Metadata = {
-    title: {
-        default: "Kinetics.ai",
-        template: "%s | kinetics.ai"
-    },
-    description: "xxx",
-    keywords: ["Oxxx"],
-    icons: {
-        icon: [
-            {
-                url: "/favicon.png",
-                href: "/favicon.png",
-            },
-        ],
-    },
-};
-
-
-
-
-
 // font
 import { Inter } from "next/font/google";
 const inter = Inter({
@@ -49,6 +26,25 @@ const inter = Inter({
 
 // Google Analystics
 import { GoogleAnalytics } from '@next/third-parties/google'
+
+
+export const metadata: Metadata = {
+    title: {
+        default: "Ascend AI",
+        template: "%s | Ascend AI"
+    },
+    // description: "xxx",
+    keywords: ["Ascend AI", "Robotics", "Embodied AI"],
+    icons: {
+        icon: [
+            {
+                url: "/favicon.png",
+                href: "/favicon.png",
+            },
+        ],
+    },
+};
+
 
 
 
@@ -63,11 +59,11 @@ export default async function RootLayout({
     children: React.ReactNode
     params: Promise<{ locale: 'en' | 'zh' }>
 }>) {
+
     const {locale} = await params;
     if (!hasLocale(routing.locales, locale)) {
         notFound();
     }
-    
     // Enable static rendering
     setRequestLocale(locale);
 
