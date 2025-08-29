@@ -19,13 +19,13 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 export function Header() {
     return (
-        <header className="fixed mt-6 flex justify-between w-svw pr-2 z-10 select-none">
+        <header className="fixed mt-3 flex justify-between w-svw pr-2 z-10 select-none">
 
 
 
             {/* LOGO */}
             <FadeIn>
-                <Button className="ml-6 bg-transparent hover:bg-background group">
+                <Button className="ml-3 bg-transparent hover:bg-background group">
                     <Link href="/" className="select-none">
                         <Image
                             src="/resources/logo/OpenDriveLab/D.png"
@@ -38,7 +38,7 @@ export function Header() {
             </FadeIn>
 
 
-            <div className="flex mr-6 gap-6">
+            <div className="flex mr-3 gap-3">
 
 
 
@@ -48,7 +48,7 @@ export function Header() {
                     <DrawerTrigger asChild>
                         <FadeIn>
                             <Button className="bg-transparent hover:bg-background hover:text-foreground">
-                                <Languages className="size-6"/>
+                                <Languages/>
                             </Button>
                         </FadeIn>
                     </DrawerTrigger>
@@ -65,7 +65,7 @@ export function Header() {
                     <DrawerTrigger asChild>
                         <FadeIn>
                             <Button className="bg-transparent hover:bg-background hover:text-foreground">
-                                <Menu className="size-6"/>
+                                <Menu/>
                             </Button>
                         </FadeIn>
                     </DrawerTrigger>
