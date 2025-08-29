@@ -1,5 +1,9 @@
 {
-  "Home": {
-    "title": "nihao"
-  }
+    "Layout": {
+        "language": "中文",
+        "menu": "菜单"
+    },
+    "Home": {
+        "title": "Hello world!"
+    }
 }

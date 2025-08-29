@@ -1,5 +1,9 @@
 {
-  "Home": {
-    "title": "Hello world!"
-  }
+    "Layout": {
+        "language": "English",
+        "menu": "Menu"
+    },
+    "Home": {
+        "title": "Hello world!"
+    }
 }

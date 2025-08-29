@@ -11,10 +11,10 @@ import {
 
 
 
-export function Menu() {
+export function Menudr() {
     return (
-        <DrawerContent className='pt-12 pb-6 px-64 min-w-96'>
-            <DrawerHeader className="w-96">
+        <DrawerContent>
+            <DrawerHeader>
                 <DrawerTitle>
                     Subscribe to WeChat Public Accountsdwqdwea 
                     <br></br>

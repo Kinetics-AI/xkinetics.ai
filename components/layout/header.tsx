@@ -1,42 +1,41 @@
 "use client"
 
-
-
 import Link from "next/link"
 import Image from 'next/image'
 
-
-
 import { Button } from "@/components/ui/button";
-
-import { Menu } from "./menu";
-import { Language } from "./international"
 import {
     Drawer,
     DrawerTrigger,
 } from "@/components/ui/drawer"
+import { Menudr } from "./menu";
+import { Language } from "./international"
+
+import { Languages, Menu } from "lucide-react"
+
+import { FadeIn } from "@/components/animation/fade-in"
+
 
 
 export function Header() {
-
     return (
-        <header className="fixed flex justify-between w-svw bg-amber-700 pr-2 z-60">
+        <header className="fixed mt-6 flex justify-between w-svw pr-2 z-10 select-none">
+
 
 
             {/* LOGO */}
-            <Button className="bg-background text-foreground hover:bg-white group">
-                <Link href="/" className="select-none">
-                    <Image
-                        src="/resources/logo/OpenDriveLab/D.png"
-                        alt="OpenDriveLab"
-                        width={24}
-                        height={24}
-                        className="group-hover:scale-125 transition delay-100 duration-200"
-                    />
-                </Link>
-            </Button>
-
-
+            <FadeIn>
+                <Button className="ml-6 bg-transparent hover:bg-background group">
+                    <Link href="/" className="select-none">
+                        <Image
+                            src="/resources/logo/OpenDriveLab/D.png"
+                            alt="Ascend AI"
+                            width={6}
+                            height={6}
+                        />
+                    </Link>
+                </Button>
+            </FadeIn>
 
 
             <div className="flex mr-6 gap-6">
@@ -47,7 +46,11 @@ export function Header() {
                 <Drawer direction="right">
                     
                     <DrawerTrigger asChild>
-                        <Button>Language</Button>
+                        <FadeIn>
+                            <Button className="bg-transparent hover:bg-background hover:text-foreground">
+                                <Languages className="size-6"/>
+                            </Button>
+                        </FadeIn>
                     </DrawerTrigger>
 
                     <Language/>
@@ -60,10 +63,14 @@ export function Header() {
                 <Drawer direction="right">
 
                     <DrawerTrigger asChild>
-                        <Button>Menu</Button>
+                        <FadeIn>
+                            <Button className="bg-transparent hover:bg-background hover:text-foreground">
+                                <Menu className="size-6"/>
+                            </Button>
+                        </FadeIn>
                     </DrawerTrigger>
 
-                    <Menu/>
+                    <Menudr/>
                 
                 </Drawer>
 
