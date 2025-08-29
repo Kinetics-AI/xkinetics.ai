@@ -1,9 +1,11 @@
 import {use} from 'react';
 import {setRequestLocale} from 'next-intl/server';
 import {useTranslations} from 'next-intl';
-import { FadeIn } from "@/components/animation/fade-in"
 
 import Image from 'next/image'
+
+import { FadeIn } from "@/components/animation/fade-in"
+
 
 
 export default function Page({
@@ -13,10 +15,8 @@ export default function Page({
 }) {
 
     const {locale} = use(params);
-    
     // Enable static rendering
     setRequestLocale(locale);
-    
     // Once the request locale is set, you
     // can call hooks from `next-intl`
     const t = useTranslations('Home');
@@ -26,8 +26,9 @@ export default function Page({
         <>
 
 
+
             {/* Landing */}
-            <div className="w-full   h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
+            <div className="w-full h-svh flex flex-row justify-center relative items-center bg-gradient-to-br from-mblue via-morange to-mred bg-fixed">
                 <div>
                     <Image
                         src="https://assets.ascendai.com/rMmibFe4czY.jpg"
@@ -37,13 +38,14 @@ export default function Page({
                     />
                 </div>
                 <div className="w-full px-6 xl:px-0 max-w-7xl flex absolute flex-col gap-6 items-start">
-                    <h1 className="font-bold text-t0 text-white">
-                        <FadeIn>Ascend AI</FadeIn>
-                        <br></br>
-                        {t('title')}
-                    </h1>
+                    <FadeIn>
+                        <h1 className="font-bold text-t0 text-white">
+                            {t('title')}
+                        </h1>
+                    </FadeIn>
                 </div>
             </div>
+
 
 
         </>
