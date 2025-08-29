@@ -14,11 +14,10 @@ import {
 export function MenuDrawer() {
     return (
         <DrawerContent className="p-6">
-            <DrawerHeader></DrawerHeader>
+            <DrawerTitle></DrawerTitle>
                 <div className="w-full h-full flex flex-col justify-center">
                     TODO
                 </div>
-            <DrawerFooter></DrawerFooter>
         </DrawerContent>
     )
 }
