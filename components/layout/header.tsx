@@ -38,7 +38,7 @@ export function Header() {
             </FadeIn>
 
 
-            <div className="flex mr-3 gap-3">
+            <div className="flex mr-3 md:gap-3">
 
 
 
