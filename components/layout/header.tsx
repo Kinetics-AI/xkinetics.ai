@@ -8,8 +8,8 @@ import {
     Drawer,
     DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Menudr } from "./menu";
-import { Language } from "./international"
+import { MenuDrawer } from "./menu";
+import { LanguageDrawer } from "./international"
 
 import { Languages, Menu } from "lucide-react"
 
@@ -53,7 +53,7 @@ export function Header() {
                         </FadeIn>
                     </DrawerTrigger>
 
-                    <Language/>
+                    <LanguageDrawer/>
                 
                 </Drawer>
 
@@ -70,7 +70,7 @@ export function Header() {
                         </FadeIn>
                     </DrawerTrigger>
 
-                    <Menudr/>
+                    <MenuDrawer/>
                 
                 </Drawer>
 

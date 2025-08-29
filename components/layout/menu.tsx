@@ -11,16 +11,13 @@ import {
 
 
 
-export function Menudr() {
+export function MenuDrawer() {
     return (
-        <DrawerContent>
-            <DrawerHeader>
-                <DrawerTitle>
-                    Subscribe to WeChat Public Accountsdwqdwea 
-                    <br></br>
-                    關注微信公眾號
-                </DrawerTitle>
-            </DrawerHeader>
+        <DrawerContent className="p-6">
+            <DrawerHeader></DrawerHeader>
+                <div className="w-full h-full flex flex-col justify-center">
+                    TODO
+                </div>
             <DrawerFooter></DrawerFooter>
         </DrawerContent>
     )

@@ -11,16 +11,13 @@ import {
 
 
 
-export function Language() {
+export function LanguageDrawer() {
     return (
-        <DrawerContent className='pt-12 pb-6 px-64 min-w-96'>
-            <DrawerHeader className="w-96">
-                <DrawerTitle>
-                    Subscribe to WeChat Public Accountsdwqdwea 
-                    <br></br>
-                    關注微信公眾號
-                </DrawerTitle>
-            </DrawerHeader>
+        <DrawerContent className="p-6">
+            <DrawerHeader></DrawerHeader>
+                <div className="w-full h-full flex flex-col justify-center">
+                    TODO
+                </div>
             <DrawerFooter></DrawerFooter>
         </DrawerContent>
     )
