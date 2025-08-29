@@ -19,7 +19,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 export function Header() {
     return (
-        <header className="fixed mt-3 flex justify-between w-svw pr-2 z-10 select-none">
+        <header className="fixed mt-3 flex justify-between w-svw md:pr-2 z-10 select-none">
 
 
 
