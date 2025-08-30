@@ -38,7 +38,7 @@ export function LanguageDrawer() {
     }
 
     return (
-        <DrawerContent className="p-6">
+        <DrawerContent className="p-6 rounded-l-3xl">
             <DrawerTitle></DrawerTitle>
             <div className="w-full h-full flex flex-col justify-center">
                 <button onClick={() => onSelectChange('zh')}>

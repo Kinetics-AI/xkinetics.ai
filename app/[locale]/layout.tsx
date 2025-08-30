@@ -5,7 +5,6 @@ import "../globals.css";
 
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { BackToTop } from "@/components/layout/top"
 
 import {notFound} from 'next/navigation';
 import {Locale, hasLocale, NextIntlClientProvider} from 'next-intl';
@@ -81,8 +80,6 @@ export default async function RootLayout({
                     </main>
 
                     <Footer/>
-
-                    <BackToTop/>
                     
                 </NextIntlClientProvider>
             </body>
