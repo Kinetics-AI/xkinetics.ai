@@ -1,7 +1,8 @@
 {
     "Layout": {
-        "language": "English",
-        "menu": "Menu"
+        "careers": "Careers",
+        "contact": "Contact",
+        "about": "About"
     },
     "Home": {
         "title": "Ascend AI"
